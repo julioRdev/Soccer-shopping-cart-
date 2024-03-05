@@ -1,0 +1,507 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>Title</title>
+        <!-- Required meta tags -->
+        <meta charset="utf-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no"
+        />
+
+        <!-- Bootstrap CSS v5.2.1 -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+            crossorigin="anonymous"
+        />
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css" rel="stylesheet">
+        <style>
+            body {
+                margin: 0;
+            }
+            .image-container1, .image-container2, .image-container3 {
+              background-color: #ffffff; 
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              height: 300px;
+            }
+            .image-container2 {
+              background-color: #000000;
+            }
+            .image-container3 {
+              background-color: #E30919; 
+            }
+            .carousel-item img {
+              max-width: 100%;
+              max-height: 100%; 
+            }
+            .card-img-top {
+                object-fit: cover; 
+                height: 300px; 
+            }
+            .img_cleats{
+                object-fit: cover; 
+                height: 250px; 
+            }
+            .card {
+                max-width: 15rem;
+            }
+            .col-md-3{
+                padding: 0px 9px;
+                width: 300px;
+            }
+            .no-gutters {
+                margin-right: 0;
+                margin-left: 0;
+            }
+            .card-text {
+                font-size: 25px;
+                color: #E30919;
+                font-weight: bold;
+            }
+            #cart {
+                background-color: #ebebeb;
+                padding: 10px;
+                border: 1px solid #ebebeb;
+                border-radius: 5px;
+            }
+
+            #cart-items {
+                list-style-type: none;
+                padding: 0;
+            }
+
+            .cart-item {
+                margin-bottom: 5px;
+                padding: 10px;
+                background-color: #ffffff;
+                border: 1px solid #ced4da;
+                border-radius: 5px;
+            }
+            .container{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            .input_contacto{
+                width: 500px;
+            }
+
+        </style>
+
+    </head>
+
+    <body>
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <div class="navbar-nav">
+                            <a class="nav-link text-dark" href="#cart">
+                                <i class="bi bi-cart"></i> 
+                            </a>                            
+                            <a class="nav-link text-dark" href="#calzado">Calzado</a>
+                        </div>
+                    </div>
+                    <div class="d-flex">
+                        <a class="btn btn-danger" href="#contact">Contáctanos</a>
+                    </div>
+                </div>
+            </nav>
+        <main>
+            <!--CAROUSEL SECTION-->
+            <div id="carouselStores" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <div class="image-container1">
+                      <img src="./img/adidas.jpg" alt="...">
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="image-container2">
+                      <img src="./img/nike.png" alt="...">
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="image-container3">
+                      <img src="./img/puma-logo.jpg" alt="...">
+                    </div>
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselStores" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Anterior</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselStores" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Siguiente</span>
+                </button>
+            </div>
+            <!--JERSEYS CARD SECTION-->
+            <h1 style="text-align: center;" class="pt-5">Jerseys</h1>
+            <div class="row row-cols-1 row-cols-md-4 g-2 mt-5 mb-5 no-gutters ps-4">
+                <div class="col-md-3 ps-5 pb-5">
+                    <div class="card h-100">
+                        <img src="./img/playera_barca.jpg" class="card-img-top" alt="...">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Jersey Nike Fc Barcelona Local 23/24</h5>
+                            <p class="card-text">$1,799.00</p>
+                            <button type="button" class="btn btn-danger btn-ver-especificaciones" data-bs-toggle="modal" data-bs-target="#artModal" data-title="Jersey Nike Fc Barcelona Local 23/24" data-price="$1,799.00" data-description="En esta nueva equipación regresan los dos bastones tradicionales y son gruesos; el cuello y hombros se pintan de azul mientras que las mangas quedan en rojo. En el escudo encontrarás un rombo que simboliza al primer equipo femenino que disputo un encuentro en el Camp Nou en la década de los 70. ">
+                                Ver especificaciones
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 ps-5 pb-5">
+                    <div class="card h-100">
+                        <img src="./img/playera_madrid.jpg" class="card-img-top" alt="...">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Jersey Adidas Real Madrid Local 23/24</h5>
+                            <p class="card-text">$1,799.00</p>
+                            <button type="button" class="btn btn-danger btn-ver-especificaciones" data-bs-toggle="modal" data-bs-target="#artModal" data-title="Jersey Adidas Real Madrid Local 23/24" data-price="$1,799.00" data-description="Su base es el blanco y se acompaña de detales azules y dorados, estos se encuentran de manera combinada en los puños y cuello mientras que en el costado aparece en solitario el azul y en los hombros el dorado, adoptando las tres franjas clásicas. Como jock tag en la nuca encontrarás el lema ¡Hala Madrid!">
+                                Ver especificaciones
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 ps-5 pb-5">
+                    <div class="card h-100">
+                        <img src="./img/playera_chivas.jpg" class="card-img-top" alt="...">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Jersey Puma Chivas Local 23/24</h5>
+                            <p class="card-text">$1,799.00</p>
+                            <button type="button" class="btn btn-danger btn-ver-especificaciones" data-bs-toggle="modal" data-bs-target="#artModal" 
+                             data-title="Jersey Puma Chivas Local 23/24" data-price="$1,799.00" data-description="Su base es el blanco en la parte frontal y se decora de cuatro bastones rojos y dos superiores forman un par de cuernos. La espalda es totalmente roja mientras que los puños y el cuello se aplicaron en azul.El escudo del Guadalajara fue aplicado en sus colores originales y el logotipo Puma Cat en blanco.">
+                                Ver especificaciones
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 ps-5 pb-5">
+                    <div class="card h-100">
+                        <img src="./img/playera_miami.jpg" class="card-img-top" alt="...">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Jersey Adidas Inter De Miami Visita 23/24</h5>
+                            <p class="card-text">$1,999.00</p>
+                            <button type="button" class="btn btn-danger btn-ver-especificaciones" data-bs-toggle="modal" data-bs-target="#artModal" data-title="Jersey Adidas Inter De Miami Visita 23/24" data-price="$1,999.00" data-description="Esta playera esta confeccionada con un tejido 100% poliéster que brinda una comodidad óptima para todo el día, cuenta con tecnología AEROREADY que absorbe la humedad del sudor y te mantiene fresco, presenta el escudo del Inter de Miami y un patrocinador en la parte frontal de la jersey, mientras que en la parte trasera muestra el icónico número 10 y nombre de Lionel Messi.">
+                                Ver especificaciones
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 ps-5 pb-5">
+                    <div class="card h-100">
+                        <img src="./img/playera_juve.jpg" class="card-img-top" alt="...">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Jersey Adidas Juventus Local 23/24</h5>
+                            <p class="card-text">$1,799.00</p>
+                            <button type="button" class="btn btn-danger btn-ver-especificaciones" data-bs-toggle="modal" data-bs-target="#artModal" data-title="Jersey Adidas Juventus Local 23/24" data-price="$1,799.00" data-description="Los bastones negros y blancos son numerosos y están inspirados en las cebras, el amarillo se hace presenta en los puños, cuello y en las tres franjas clásicas que descansan en los hombros. El escudo del equipo y logotipo adidas aparecen en el mismo color mencionado, la parte superior de la espalda es totalmente negra para que destaque el nombre y número.">
+                                Ver especificaciones
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 ps-5 pb-5">
+                    <div class="card h-100">
+                        <img src="./img/playera_milan.jpg" class="card-img-top" alt="...">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Jersey Puma A.C Milán Local 23/24</h5>
+                            <p class="card-text">$1,799.00</p>
+                            <button type="button" class="btn btn-danger btn-ver-especificaciones" data-bs-toggle="modal" data-bs-target="#artModal" 
+                             data-title="Jersey Puma A.C Milán Local 23/24" data-price="$1,799.00" data-description = "En la parte frontal de esta nueva equipación del cuadro rossonero se forma una M que representa al equipo y su ciudad, los bastones tradicionales forman un patrón irregular que le da un toque moderno. El cuello y los puños se pintan de negro, la parte trasera es lisa. ">
+                                Ver especificaciones
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 ps-5 pb-5">
+                    <div class="card h-100">
+                        <img src="./img/playera_arsenal.jpg" class="card-img-top" alt="...">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Jersey Adidas Arsenal Local 23/24</h5>
+                            <p class="card-text">$1,799.00</p>
+                            <button type="button" class="btn btn-danger btn-ver-especificaciones" data-bs-toggle="modal" data-bs-target="#artModal" 
+                             data-title="Jersey Adidas Arsenal Local 23/24" data-price="$1,799.00" data-description="Todo el cuerpo es rojo mientras que las mangas son blancas y rematan con un acabado en el primer color mencionado; el oro le da un toque bellísimo y elegante. En la nuca aparecen las iniciales del club, un gráfico en líneas zigzag decora esta nueva equipación. ">
+                                Ver especificaciones
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 ps-5 pb-5">
+                    <div class="card h-100">
+                        <img src="./img/playera_paris.jpg" class="card-img-top" alt="...">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Jersey Jordan Paris Saint-Germain Tercero 23/24</h5>
+                            <p class="card-text">$1,899.00</p>
+                            <button type="button" class="btn btn-danger btn-ver-especificaciones" data-bs-toggle="modal" data-bs-target="#artModal" data-title="Jersey Jordan Paris Saint-Germain Tercero 23/24" data-price="$1,899.00" data-description="La base de este jersey del cuadro parisino es el gris, un gráfico estilo camuflaje le da un toque muy especial y la clásica banda en el centro queda lisa. El escudo aparece de manera monocromática, así como el logotipo Jordan. El cuello y sus puños se pintan de negro.">
+                                Ver especificaciones
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--SOCCER CLEATS CARD SECTION-->
+            <h1 style="text-align: center;" class="pt-5" id="calzado">Calzado</h1>
+            <div class="row row-cols-1 row-cols-md-4 g-2 mt-5 mb-5 no-gutters ps-4">
+                <div class="col-md-3 ps-5 pb-5">
+                    <div class="card h-100">
+                        <img src="./img/nike1.jpg" class="card-img-top img_cleats" alt="...">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Tenis De Fútbol Nike Mercurial Superfly 9 Academy Mg</h5>
+                            <p class="card-text">$2,499.00</p>
+                            <button type="button" class="btn btn-danger btn-ver-especificaciones" data-bs-toggle="modal" data-bs-target="#artModal" data-title="Tenis De Fútbol Nike Mercurial Superfly 9 Academy Mg" data-price="$2,499.00" data-description="Cuentan con una unidad Zoom Air que se encuentra en la suela y esto significa que tendrás una sensación elástica en la planta del pie para que tus movimientos sean veloces. La caja de velocidad dentro de la estructura se fabricó con un material delgado, pero resistente, sin agregar peso extra. El Flyknit envuelve tu tobillo para darte una total seguridad.">
+                                Ver especificaciones
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 ps-5 pb-5">
+                    <div class="card h-100">
+                        <img src="./img/puma1.jpg" class="card-img-top img_cleats" alt="...">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Tenis De Fútbol Puma Future 7 Ultimate Ftr Fg/Ag</h5>
+                            <p class="card-text">$4,499.00</p>
+                            <button type="button" class="btn btn-danger btn-ver-especificaciones" data-bs-toggle="modal" data-bs-target="#artModal" data-title="Tenis De Fútbol Puma Future 7 Ultimate Ftr Fg/Ag" data-price="$4,499.00" data-description="El refuerzo PWRTAPE está ubicado en el empeine, te brindará sujeción y durabilidad. La plantilla es removible y se combina con la tecnología NanoGrip que evita que el pie se deslice dentro del tachón. La parte superior FUZIONFIT360 combina una malla de doble densidad con un tejido elástico. El acolchado del talón microperforado mantiene tu talón firme y con una sensación agradable.">
+                                Ver especificaciones
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 ps-5 pb-5">
+                    <div class="card h-100">
+                        <img src="./img/nike2.jpg" class="card-img-top img_cleats" alt="...">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Tenis De Fútbol Nike Phantom Gx Pro Fg</h5>
+                            <p class="card-text">$3,399.00</p>
+                            <button type="button" class="btn btn-danger btn-ver-especificaciones" data-bs-toggle="modal" data-bs-target="#artModal" 
+                             data-title="Tenis De Fútbol Nike Phantom Gx Pro Fg" data-price="$3,399.00" data-description="La zona táctil NikeSkin ampliada se impulsa por una malla que te dará un mayor contacto con el esférico, tendrás un gran control en superficies secas o húmedas. La parte superior es suave y casi tejida; la asimetría en el talón aumenta la comodidad y los elementos suaves en el talón facilitan el proceso de adaptación. También ayudan a reducir la irritación y presión sin comprometer la estabilidad y estructura.">
+                                Ver especificaciones
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 ps-5 pb-5">
+                    <div class="card h-100">
+                        <img src="./img/adidas1.jpg" class="card-img-top img_cleats" alt="...">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Tenis De Fútbol Adidas X Crazyfast Elite Fg</h5>
+                            <p class="card-text">$6,999.00</p>
+                            <button type="button" class="btn btn-danger btn-ver-especificaciones" data-bs-toggle="modal" data-bs-target="#artModal" data-title="Tenis De Fútbol Adidas X Crazyfast Elite Fg" data-price="$6,999.00" data-description="La suela viene equipada con la construcción AEROPLATE que mejora la propulsión y los movimientos dinámicos. La suela SPEEDFRAME mejora la tracción y el sistema de cordones te dará un ajuste y soporte de primer nivel. El cuello PRIMEKNIT combina fuerza y rendimiento con un algo confort. Los tacos FG son ideales para todos tus encuentros en canchas de césped natural. ">
+                                Ver especificaciones
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 ps-5 pb-5">
+                    <div class="card h-100">
+                        <img src="./img/puma2.jpg" class="card-img-top img_cleats" alt="...">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Tenis De Fútbol Puma Attacanto Fg/Ag</h5>
+                            <p class="card-text">$1,149.00</p>
+                            <button type="button" class="btn btn-danger btn-ver-especificaciones" data-bs-toggle="modal" data-bs-target="#artModal" data-title="Tenis De Fútbol Puma Attacanto Fg/Ag" data-price="$1,149.00" data-description="La seguridad se sentirá desde que entres en contacto con la pelota, todos tus disparos y asistencias serán precisas. La suela FG/AG son ideales para todos tus partidos y entrenamientos en canchas de césped natural o artificial, serás un todoterreno. Se ajustan mediante unos cordones que se acompañan de una lengüeta que es muy agradable.">
+                                Ver especificaciones
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 ps-5 pb-5">
+                    <div class="card h-100">
+                        <img src="./img/adidas2.jpg" class="card-img-top img_cleats" alt="...">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Tenis De Fútbol Adidas Predator Accuracy+ Fg</h5>
+                            <p class="card-text">$4,999.00</p>
+                            <button type="button" class="btn btn-danger btn-ver-especificaciones" data-bs-toggle="modal" data-bs-target="#artModal" 
+                             data-title="Tenis De Fútbol Adidas Predator Accuracy+ Fg" data-price="$4,999.00" data-description = "La parte superior HybridTouch cuenta con elementos de goma High Definition Grip en la zona de golpeo, tendrás un gran agarre con la pelota y el antepié se mantendrán flexibles para darte un movimiento natural. La suela cuenta con un Power Facet para disparos letales, el cuello Primeknit es de dos piezas.  ">
+                                Ver especificaciones
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 ps-5 pb-5">
+                    <div class="card h-100">
+                        <img src="./img/puma3.jpg" class="card-img-top img_cleats" alt="...">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Tenis De Fútbol Puma Ultra Pro Fg/Ag</h5>
+                            <p class="card-text">$3,399.00</p>
+                            <button type="button" class="btn btn-danger btn-ver-especificaciones" data-bs-toggle="modal" data-bs-target="#artModal" 
+                             data-title="Tenis De Fútbol Puma Ultra Pro Fg/Ag" data-price="$3,399.00" data-description="La suela de TPU Speedplate te dará una gran tracción y propulsión mientras que la suela ligera Dynamic Motion System mejora la agilidad para cambios de ritmo y dirección. El cuello alto de punto te dará un ajuste ceñido en tu tobillo. ">
+                                Ver especificaciones
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 ps-5 pb-5">
+                    <div class="card h-100">
+                        <img src="./img/adidas3.jpg" class="card-img-top img_cleats" alt="...">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">JTenis De Fútbol Adidas Predator Accuracy.2 Fg</h5>
+                            <p class="card-text">$1,849.00</p>
+                            <button type="button" class="btn btn-danger btn-ver-especificaciones" data-bs-toggle="modal" data-bs-target="#artModal" data-title="Tenis De Fútbol Adidas Predator Accuracy.2 Fg" data-price="$1,849.00" data-description="Sus materiales son sumamente cómodos y se adaptarán de manera inmediata a tus pies. Se ajustan mediante cordones que se acompañan de una lengüeta y un cuello que son elásticos. Los tacos FG se encargarán de brindarte una gran tracción en todas las canchas de césped natural que visites. ">
+                                Ver especificaciones
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div id="cart" class="mt-3">
+                <h4 style="text-align: center;">Carrito de compras</h4>
+                <ul id="cart-items"></ul>
+                <p id="total_carrito"></p>
+            </div>
+            <div id="contact" class="container mt-5 mb-5">
+                <h2>Contacto</h2>
+                <p>¡Contáctanos para obtener más información!</p>
+                <div class="row">
+                    <div class="col-md-6">
+                        <form>
+                            <div class="mb-3">
+                                <label for="name" class="form-label ">Nombre</label>
+                                <input type="text" class="form-control input_contacto" id="name" placeholder="Ingrese su nombre">
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label ">Correo electrónico</label>
+                                <input type="email" class="form-control input_contacto" id="email" placeholder="Ingrese su correo electrónico">
+                            </div>
+                            <div class="mb-3">
+                                <label for="message" class="form-label ">Mensaje</label>
+                                <textarea class="form-control input_contacto" id="message " rows="5" placeholder="Ingrese su mensaje" style="resize: none;"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Enviar mensaje</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <footer class="bg-dark text-light py-4">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h5>Contacto</h5>
+                            <p>¡Contáctanos para obtener más información!</p>
+                            <p>Teléfono: +123456789</p>
+                            <p>Correo electrónico: info@example.com</p>
+                            <p>Dirección: 123 Calle Principal, S.L.P, México</p>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+            
+        </main>
+        <!-- Modal -->
+<div class="modal fade" id="artModal" tabindex="-1" aria-labelledby="artModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Especificaciones del producto</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="mb-3">
+                    <label for="product-title" class="form-label">Título del producto</label>
+                    <input type="text" class="form-control" id="product-title" readonly>
+                </div>
+                <div class="mb-3">
+                    <label for="product-description" class="form-label">Descripción</label>
+                    <textarea class="form-control" id="product-description" rows="6" readonly style="resize: none; height: 170px;"></textarea>
+                </div>                            
+                <div class="mb-3">
+                    <label for="product-price" class="form-label">Precio</label>
+                    <input type="text" class="form-control" id="product-price" readonly>
+                </div>
+                <div class="mb-3">
+                    <label for="product-size" class="form-label">Talla</label>
+                    <select class="form-select" id="product-size">
+                        <option selected>Selecciona una talla</option>
+                        <option value="S">S</option>
+                        <option value="M">M</option>
+                        <option value="L">L</option>
+                        <option value="XL">XL</option>
+                    </select>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Cerrar</button>
+                <button type="button" class="btn btn-success" id="add-to-cart"  data-bs-dismiss="modal">Agregar al carrito</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+        <!-- Bootstrap JavaScript Libraries -->
+        <script
+            src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+            crossorigin="anonymous"
+        ></script>
+
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+            integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+            crossorigin="anonymous"
+        ></script>
+        <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+        <script>
+            $(document).ready(function() {
+                // Función para actualizar el total
+                function updateTotal() {
+                    var total = 0;
+                    // Iterar sobre cada elemento de la lista del carrito
+                    $('#cart-items li').each(function() {
+                        var priceString = $(this).text().split('Precio: ')[1]; // Obtener el precio del texto del elemento
+                        // Reemplazar la coma por nada para eliminarla y luego convertir el precio a número
+                        var price = parseFloat(priceString.replace('$', '').replace(',', '')); 
+                        total += price; // Sumar el precio al total
+                    });
+                    // Mostrar el total actualizado
+                    $('#total_carrito').text('Total: $' + total.toFixed(2)); // Redondear el total a 2 decimales
+
+                }
+        
+                $('.btn-ver-especificaciones').click(function() {
+                    var title = $(this).data('title');
+                    var description = $(this).data('description');
+                    var price = $(this).data('price');
+                    
+                    $('#product-title').val(title);
+                    $('#product-description').val(description);
+                    $('#product-price').val(price);
+                });
+                
+                $('#add-to-cart').click(function() {
+                    var title = $('#product-title').val();
+                    var size = $('#product-size').val();
+                    var price = $('#product-price').val();
+                    
+        
+                    var listItem = $('<li class="cart-item">').text(title + ' - Talla: ' + size + ' - Precio: ' + price);
+                    
+        
+                    var removeButton = $('<button class="btn btn-sm btn-danger remove-item ms-5 ms-5">').text('Eliminar');
+                    removeButton.click(function() {
+                        $(this).parent().remove(); 
+                        updateTotal(); // Actualizar el total al eliminar un producto
+                    });
+                    
+                    listItem.append(removeButton);
+                    
+                    $('#cart-items').append(listItem);
+                    updateTotal(); // Actualizar el total al agregar un producto
+                });
+                
+                $(document).on('click', '.remove-item', function() {
+                    $(this).parent().remove(); 
+                    updateTotal(); // Actualizar el total al eliminar un producto
+                });
+            });
+        </script>
+        
+    </body>
+</html>
